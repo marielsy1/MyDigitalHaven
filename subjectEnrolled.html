@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects Currently Enrolled</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f6; /* Soft Pink */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            background-color: #e9c6c6; /* Soft Muted Pink */
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hname h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .nav-items {
+            padding: 0;
+            margin: 10px 0 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-items li {
+            display: inline;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-items a:hover {
+            color: #4e6574; /* Soft Muted Blue */
+        }
+
+        /* Main Content */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 120px;
+            color: #333;
+        }
+
+        .table-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 900px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #e9c6c6; /* Soft Pink Header */
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8eaea; /* Light pink alternate rows */
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding: 15px;
+            text-align: center;
+            background-color: #e9c6c6; /* Soft Muted Pink */
+            color: white;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="hname"><h1>My Digital Haven</h1></div>
+        <ul class="nav-items">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="subjectTaken.html">Subjects Taken</a></li>
+            <li><a href="subjectEnrolled.html">Currently Enrolled</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="favorites.html">My Favorites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+
+    <!-- Enrolled Subjects Section -->
+    <h1>Subjects Currently Enrolled</h1>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Subject Name</th>
+                <th>Description</th>
+                <th>Schedule</th>
+                <th>Units</th>
+            </tr>
+            <tr>
+                <td rowspan="2">CSIT 5</td>
+                <td rowspan="2">Computer Science & IT</td>
+                <td>10:05-11:05A TTH</td>
+                <td rowspan="2">3.0</td>
+            </tr>
+            <tr>
+                <td>09:35-11:05A MW</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">ITP 4</td>
+                <td rowspan="2">Introduction to Programming</td>
+                <td>03:05-04:05P MW</td>
+                <td rowspan="2">3.0</td>
+            </tr>
+            <tr>
+                <td>01:00-02:30P MW</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">ITP 5</td>
+                <td rowspan="2">Intermediate Programming</td>
+                <td>11:10-12:10N TTH</td>
+                <td rowspan="2">3.0</td>
+            </tr>
+            <tr>
+                <td>08:00-09:30A TTH</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">ITP 6</td>
+                <td rowspan="2">Advanced Programming</td>
+                <td>01:00-02:30P MW</td>
+                <td rowspan="2">3.0</td>
+            </tr>
+            <tr>
+                <td>02:35-04:05P TTH</td>
+            </tr>
+
+            <tr>
+                <td>RIZAL CRS.</td>
+                <td>Life and Works of Rizal</td>
+                <td>11:10-12:40N MW</td>
+                <td>3.0</td>
+            </tr>
+
+            <tr>
+                <td>STS 1</td>
+                <td>Science, Technology, & Society</td>
+                <td>08:00-11:00A F</td>
+                <td>3.0</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">Copyright &#169; Mariel Branzuela Manabay </div>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f1f1; /* Soft Beige */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            background-color: #e1bfbf; /* Muted Pastel Pink */
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hname h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .nav-items {
+            padding: 0;
+            margin: 10px 0 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-items li {
+            display: inline;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-items a:hover {
+            color: #4e6574; /* Soft Muted Blue */
+        }
+
+        /* Contact Section */
+        .contactH {
+            margin-top: 120px;
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .soc {
+            font-size: 18px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .soc img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .soc a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .soc a:hover {
+            color: #4e6574; /* Soft Muted Blue */
+        }
+
+        .soc:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding: 15px;
+            text-align: center;
+            background-color: #e1bfbf; /* Muted Pastel Pink */
+            color: white;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="hname"><h1>My Digital Haven</h1></div>
+        <ul class="nav-items">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="subjectTaken.html">Subjects Taken</a></li>
+            <li><a href="subjectEnrolled.html">Currently Enrolled</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="favorites.html">My Favorites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Heading -->
+    <h1 class="contactH">Drop a Message!</h1>
+    
+    <div class="socials">
+        <div class="soc">
+            <img src="email-icon.png" alt="Email Icon">
+            <a href="mailto:marielmanabay@gmail.com">marielmanabay@gmail.com</a>
+        </div>
+        <div class="soc">
+            <img src="facebook-icon.png" alt="Facebook Icon">
+            <a href="https://www.facebook.com/mariel.manabay.1" target="_blank">Facebook: Mariel Manabay</a>
+        </div>
+        <div class="soc">
+            <img src="instagram-icon.png" alt="Instagram Icon">
+            <a href="https://www.instagram.com/marielmanabay" target="_blank">Instagram: @iammariel.sy</a>
+        </div>
+        <div class="soc">
+            <img src="viber-icon.png" alt="Viber Icon">
+            <a href="viber://chat?number=+639100926105">Viber: +63 910 092 6105</a>
+        </div>
+        <div class="soc">
+            <img src="phone-icon.png" alt="Phone Icon">
+            <a href="tel:++63 910 092 6105">Phone: +63 910 092 6105</a>
+        </div>
+    </div>
+
+    <div class="footer">Copyright &#169; Mariel Branzuela Manabay</div>
+
+</body>
+</html>

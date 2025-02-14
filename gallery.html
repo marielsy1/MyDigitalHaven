@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f1f1; /* Soft Beige */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            background-color: #e1bfbf; /* Muted Pastel Pink */
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hname h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .nav-items {
+            padding: 0;
+            margin: 10px 0 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-items li {
+            display: inline;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-items a:hover {
+            color: #4e6574; /* Soft Muted Blue */
+        }
+
+        /* Image Slider */
+        .mainBox {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .slider {
+            position: relative;
+            width: 800px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .slides {
+            display: flex;
+            width: 1000%;
+            height: 100%;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slide {
+            width: 10%;
+            height: 100%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .slide img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* Elegant Navigation Dots */
+        .navigation-auto {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .auto-btn {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #FAD0C4, #FFD1FF); /* Soft Peach to Lilac */
+            box-shadow: 0px 0px 6px rgba(255, 209, 255, 0.5);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            border: none;
+        }
+
+        .auto-btn:hover, .auto-btn.active {
+            background: linear-gradient(135deg, #B5FFFC, #FFD1FF); /* Light Blue to Soft Lilac */
+            box-shadow: 0px 0px 12px rgba(255, 209, 255, 0.8);
+            transform: scale(1.4);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding: 15px;
+            text-align: center;
+            background-color: #e1bfbf; /* Muted Pastel Pink */
+            color: white;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="hname"><h1>My Digital Haven</h1></div>
+        <ul class="nav-items">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="subjectTaken.html">Subjects Taken</a></li>
+            <li><a href="subjectEnrolled.html">Currently Enrolled</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="favorites.html">My Favorites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+
+    <!-- Image Slider -->
+    <div class="mainBox">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="1.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="2.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="3.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="4.jpg" alt="Image 4"></div>
+                <div class="slide"><img src="5.jpg" alt="Image 5"></div>
+                <div class="slide"><img src="6.jpg" alt="Image 6"></div>
+                <div class="slide"><img src="7.jpg" alt="Image 7"></div>
+                <div class="slide"><img src="8.jpg" alt="Image 8"></div>
+                <div class="slide"><img src="9.jpg" alt="Image 9"></div>
+                <div class="slide"><img src="10.jpg" alt="Image 10"></div>
+            </div>
+
+            <!-- Elegant Navigation Dots -->
+            <div class="navigation-auto">
+                <div class="auto-btn active"></div>
+                <div class="auto-btn"></div>
+                <div class="auto-btn"></div>
+                <div class="auto-btn"></div>
+                <div class="auto-btn"></div>
+                <div class="auto-btn"></div>
+                <div class="auto-btn"></div>
+                <div class="auto-btn"></div>
+                <div class="auto-btn"></div>
+                <div class="auto-btn"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">Copyright &#169; Mariel Branzuela Manabay </div>
+
+    <script>
+        let counter = 0;
+        const slides = document.querySelector('.slides');
+        const autoBtns = document.querySelectorAll('.auto-btn');
+
+        function changeSlide() {
+            counter = (counter + 1) % 10; 
+            slides.style.transform = `translateX(-${counter * 800}px)`;
+
+            autoBtns.forEach(btn => btn.classList.remove('active'));
+            autoBtns[counter].classList.add('active');
+        }
+
+        setInterval(changeSlide, 3000);
+
+        autoBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                counter = index;
+                slides.style.transform = `translateX(-${counter * 800}px)`;
+
+                autoBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

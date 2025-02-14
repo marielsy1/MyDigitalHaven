@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects Taken</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf6f6; 
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .navigation {
+            background-color: #e9c6c6;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .hname h1 {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            margin: 0;
+        }
+
+        .nav-items {
+            padding: 0;
+            margin-top: 10px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-items a:hover {
+            color: #4e6574;
+        }
+
+        main {
+            margin-top: 120px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+        }
+
+ /* Table Styling */
+        .centerDiv {
+            width: 80%;
+            max-width: 900px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            margin-bottom: 40px;
+            display: none; /* Hide all semesters initially */
+        }
+
+        .centerDiv.active {
+            display: block; /* Show only active semester */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #e9c6c6; /* Muted Pink Header */
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8eaea;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        /* Number Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #e9c6c6;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .pagination button.active {
+            background-color: #d46b6b;
+        }
+
+        .pagination button:hover {
+            background-color: #d4a3a3;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding: 15px;
+            background-color: #e9c6c6;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="hname"><h1>My Digital Haven</h1></div>
+        <ul class="nav-items">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="subjectTaken.html">Subjects Taken</a></li>
+            <li><a href="subjectEnrolled.html">Currently Enrolled</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="favorites.html">My Favorites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <h1>Subjects Taken</h1>
+
+        <div class="centerDiv active">
+            <h2>First Semester - 2023-2024</h2>
+            <table>
+                <tr><th>Subject Name</th><th>Description</th><th>Units</th></tr>
+                <tr><td>CSIT 1</td><td>Introduction to Computing</td><td>3</td></tr>
+                <tr><td>CSIT 2</td><td>Fundamentals of Programming</td><td>3</td></tr>
+                <tr><td>PE 3</td><td>Path Fit 3: Sports</td><td>2</td></tr>
+                <tr><td>EP 1S</td><td>English Proficiency</td><td>3</td></tr>
+                <tr><td>OC 1</td><td>Orientation Course 1</td><td>3</td></tr>
+                <tr><td>NSTP</td><td>NSTP - Literacy Training Service (LTS)</td><td>3</td></tr>
+            </table>
+        </div>
+
+        <div class="centerDiv">
+            <h2>Second Semester - 2023-2024</h2>
+            <table>
+                <tr><th>Subject Name</th><th>Description</th><th>Units</th></tr>
+                <tr><td>MATH 1</td><td>Mathematics in the Modern World</td><td>3</td></tr>
+                <tr><td>COM 1</td><td>Purposive Communication</td><td>3</td></tr>
+                <tr><td>CSIT 3</td><td>Intermediate Programming</td><td>3</td></tr>
+                <tr><td>PE 4</td><td>Path Fit 4: Sports (TEAM)</td><td>2</td></tr>
+                <tr><td>HUM 1</td><td>Arts Appreciation</td><td>3</td></tr>
+                <tr><td>PHILO 1</td><td>Ethics/Etika</td><td>3</td></tr>
+                <tr><td>NSTP</td><td>NSTP 2- Literacy Training Service II</td><td>3</td></tr>
+            </table>
+        </div>
+
+        <div class="centerDiv">
+            <h2>First Semester - 2024-2025</h2>
+            <table>
+                <tr><th>Subject Name</th><th>Description</th><th>Units</th></tr>
+                <tr><td>CSIT 4</td><td>Data Structures and Algorithms</td><td>3</td></tr>
+                <tr><td>ITP 3</td><td>Networking 1</td><td>3</td></tr>
+                <tr><td>ITEL 1A01</td><td>Platform Technologies</td><td>3</td></tr>
+                <tr><td>ITEL 2A</td><td>IT Elective 2: Object-Oriented Programming</td><td>3</td></tr>
+                <tr><td>GE EL 2</td><td>Gender Society</td><td>3</td></tr>
+                <tr><td>GE EL 1</td><td>Environmental Science (M.S.T Elective)</td><td>3</td></tr>
+
+            </table>
+        </div>
+
+        <div class="pagination"></div>
+
+    </main>
+
+    <div class="footer">Copyright &#169; Mariel Branzuela Manabay</div>
+
+    <script>
+        const semesters = document.querySelectorAll('.centerDiv');
+        const paginationContainer = document.querySelector('.pagination');
+
+        function updatePagination() {
+            paginationContainer.innerHTML = ''; 
+
+            semesters.forEach((_, index) => {
+                const button = document.createElement('button');
+                button.textContent = index + 1;
+                button.classList.toggle('active', index === currentSemester);
+                button.addEventListener('click', () => {
+                    currentSemester = index;
+                    updateDisplay();
+                });
+                paginationContainer.appendChild(button);
+            });
+        }
+
+        let currentSemester = 0;
+
+        function updateDisplay() {
+            semesters.forEach((div, index) => {
+                div.classList.toggle('active', index === currentSemester);
+            });
+            updatePagination();
+        }
+
+        updateDisplay();
+    </script>
+
+</body>
+</html>

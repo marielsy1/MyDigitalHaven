@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f6; /* Soft Pink */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            background-color: #e9c6c6; /* Soft Muted Pink */
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hname h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .nav-items {
+            padding: 0;
+            margin: 10px 0 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-items li {
+            display: inline;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-items a:hover {
+            color: #4e6574; /* Soft Muted Blue */
+        }
+
+        /* Favorites Section */
+        .fav {
+            margin-top: 120px;
+            font-family: 'Playfair Display', serif;
+            font-size: 38px;
+            color: #333;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .lists {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .lists ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .lists li {
+            font-size: 18px;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lists li:last-child {
+            border-bottom: none;
+        }
+
+        .lists strong {
+            font-family: 'Dancing Script', cursive;
+            font-size: 22px;
+            color: #c27ba0; /* Soft Rose Gold */
+        }
+
+        .lists span {
+            font-style: italic;
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding: 15px;
+            text-align: center;
+            background-color: #e9c6c6; /* Soft Muted Pink */
+            color: white;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="hname"><h1>Personal Web Page</h1></div>
+        <ul class="nav-items">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="subjectTaken.html">Subjects Taken</a></li>
+            <li><a href="subjectEnrolled.html">Currently Enrolled</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="favorites.html">My Favorites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+
+    <!-- Favorites Section -->
+    <h1 class="fav">My Favorites</h1>
+    
+    <div class="lists">
+        <ul>
+            <li><strong>Hobby:</strong> <span>Reading wattpad</span></li>
+            <li><strong>Colors:</strong> <span>Classic Black and Soft Pink</span></li>            
+            <li><strong>Music Genre:</strong> <span>Pop, acoustic, and R&B</span></li>
+            <li><strong>TV Show/Movie:</strong> <span>Romantic comedies, dramas, and fantasy films</span></li>
+            <li><strong>Food:</strong> <span>Pizza, pasta, and dark chocolate</span></li>
+            <li><strong>Fashion Item:</strong> <span>Elegant dresses, handbags, and heels</span></li>
+            <li><strong>Skincare Must-Have:</strong> <span>Moisturizer, sunscreen, and serum</span></li>
+            <li><strong>Gadget:</strong> <span>Smartphone, wireless earbuds, and laptop</span></li>
+            <li><strong>Outdoor Activity:</strong> <span>Beach trips, and nature walks</span></li>
+            <li><strong>Vacation Spot:</strong> <span>Paris, Santorini, Maldives, and Bali</span></li>
+        </ul>
+    </div>
+
+    <div class="footer">Copyright &#169; Mariel Branzuela Manabay </div>
+
+</body>
+</html>

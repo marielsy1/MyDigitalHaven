@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f1f1; /* Soft Beige Background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            background-color: #e1bfbf; /* Muted Pastel Pink */
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hname h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .nav-items {
+            padding: 0;
+            margin: 10px 0 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-items li {
+            display: inline;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-items a:hover {
+            color: #4e6574;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            margin-top: 140px;
+            width: 85%;
+            max-width: 700px;
+            background: #fff5f0; /* Soft Pastel Cream */
+            padding: 30px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-card:hover {
+            transform: scale(1.02);
+        }
+
+        .mypic img {
+            width: 160px;
+            height: 160px;
+            border-radius: 15px; /* Square with slightly rounded corners */
+            object-fit: cover;
+            margin-top: -70px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            border: 5px solid white;
+        }
+
+        .details h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-top: 15px;
+            color: #4e6574;
+        }
+
+        .aboutme {
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: justify;
+            padding: 15px 20px;
+            color: #444;
+        }
+
+        /* Quote Section */
+        .quote {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #777;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding: 15px;
+            text-align: center;
+            background-color: #e1bfbf;
+            color: white;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <div class="hname"><h1>My Digital Haven</h1></div>
+        <ul class="nav-items">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="subjectTaken.html">Subjects Taken</a></li>
+            <li><a href="subjectEnrolled.html">Currently Enrolled</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="favorites.html">My Favorites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>           
+        </ul>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+        <div class="mypic">
+            <img src="p.jpg" alt="Profile Picture">
+        </div>
+        <div class="details">
+            <h2>Mariel Manabay</h2>
+            <p class="aboutme">
+                Hi! I'm Mariel Manabay, a 25-year-old working student from Carangan, Ozamiz City, currently pursuing a Bachelor of Science in Information Technology (BSIT). Balancing work and studies has taught me discipline, time management, and perseverance. I have a strong passion for technology, programming, networking, and system management, and I enjoy solving real-world problems through innovation. Beyond academics and work, I love learning new things, spending time with my loved ones, and embracing challenges that help me grow. My ultimate goal is to build a successful career in the IT industry and make a meaningful impact while staying true to my passion and purpose.
+
+            </p>
+            <p class="quote">
+                "The best way to predict the future is to create it." – Peter Drucker
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">Copyright &#169; Mariel Branzuela Manabay</div>
+
+</body>
+</html>
